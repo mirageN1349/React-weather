@@ -1,0 +1,69 @@
+@import '../../styles/variables.scss';
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 325px);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 750px;
+  width: 100%;
+  background: $lite-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  background: $lite-background;
+}
+
+.blur {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  svg {
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.day {
+  .day__temp {
+    font-weight: 500;
+    font-size: 60px;
+    color: $primary-color;
+    margin-bottom: 12px;
+  }
+  .day__name {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 12px;
+  }
+  .img {
+    svg {
+      width: 53px;
+      height: 53px;
+    }
+    margin-bottom: 12px;
+  }
+
+  .day__time,
+  .day__city {
+    font-size: 15px;
+    color: $base-color;
+  }
+}

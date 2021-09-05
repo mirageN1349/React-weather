@@ -1,0 +1,92 @@
+@import '../../../../styles/variables.scss';
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  background: $lite-background;
+  box-shadow: $box-shadow;
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(71, 147, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  width: 149px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  .day {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+
+  .day__info {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: $base-color;
+  }
+  .img {
+    margin-bottom: 12px;
+  }
+
+  .temp__day {
+    font-size: 18px;
+  }
+
+  .temp__night {
+    font-size: 13px;
+    color: $base-color;
+    margin-bottom: 6px;
+  }
+  .info {
+    font-size: 13px;
+    color: $base-color;
+  }
+
+  &:hover {
+    box-shadow: 0px 3px 20px rgba(147, 144, 144, 0.28);
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 7px;
+}
+
+.cancel,
+.tab {
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 5px;
+  padding: 9px 20px;
+  background-color: $lite-background;
+  color: $lite-color;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.cancel {
+  margin-right: 0;
+}
+
+.tab {
+  &.active {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+
+.tabs__wrapper {
+  display: flex;
+}

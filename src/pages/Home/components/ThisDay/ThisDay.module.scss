@@ -1,0 +1,39 @@
+@import '../../../../styles/variables.scss';
+
+.this__day {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background: $lite-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+  .this__temp {
+    font-size: 96px;
+    font-weight: 500;
+    color: $primary-color;
+  }
+  .this__day_name {
+    font-size: 40px;
+    color: $lite-color;
+  }
+}
+
+.bottom__block {
+  .this__time,
+  .this__city {
+    color: $base-color;
+    font-size: 25px;
+  }
+}
