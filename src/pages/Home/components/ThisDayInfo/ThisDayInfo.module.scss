@@ -5,10 +5,9 @@
   padding: 40px;
   max-width: 750px;
   width: 100%;
-  background: $lite-background;
   box-shadow: $box-shadow;
   border-radius: $border-radius;
-  background: $lite-background;
+  background: var(#{--components-background-default});
 }
 
 .item {
@@ -43,7 +42,7 @@
     color: $base-color;
   }
   .indicator__value {
-    color: $lite-color;
+    color: var(#{--text-color-default});
   }
 }
 
